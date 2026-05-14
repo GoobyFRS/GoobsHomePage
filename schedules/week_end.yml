@@ -1,51 +1,54 @@
+# Placeholder Note
+
 Saturday:
-  "00:00": { availability: break, events: [], tasks: [] }
-  "01:00": { availability: break, events: [], tasks: [] }
-  "02:00": { availability: break, events: [], tasks: [] }
-  "03:00": { availability: break, events: [], tasks: [] }
-  "04:00": { availability: break, events: [], tasks: [] }
-  "05:00": { availability: break, events: [], tasks: [] }
-  "06:00": { availability: sleep, events: [], tasks: [] }
-  "07:00": { availability: sleep, events: [], tasks: [] }
-  "08:00": { availability: sleep, events: [], tasks: [] }
-  "09:00": { availability: available, events: [], tasks: [{title: "Morning routine"}] }
-  "10:00": { availability: available, events: [], tasks: [] }
-  "11:00": { availability: available, events: [], tasks: [] }
-  "12:00": { availability: break, events: [{title: "Brunch", duration: 90}], tasks: [] }
-  "13:00": { availability: available, events: [], tasks: [] }
-  "14:00": { availability: available, events: [{title: "Errands/Chores"}], tasks: [] }
-  "15:00": { availability: available, events: [], tasks: [] }
-  "16:00": { availability: available, events: [], tasks: [] }
-  "17:00": { availability: available, events: [], tasks: [] }
-  "18:00": { availability: available, events: [], tasks: [] }
-  "19:00": { availability: available, events: [{title: "Dinner"}], tasks: [] }
-  "20:00": { availability: available, events: [], tasks: [] }
-  "21:00": { availability: available, events: [], tasks: [] }
-  "22:00": { availability: break, events: [], tasks: [] }
-  "23:00": { availability: break, events: [], tasks: [] }
+   "00:00": { availability: sleep, events: [], tasks: [] }
+   "01:00": { availability: sleep, events: [], tasks: [] }
+   "02:00": { availability: sleep, events: [], tasks: [] }
+   "03:00": { availability: sleep, events: [], tasks: [] }
+   "04:00": { availability: sleep, events: [], tasks: [] }
+   "05:00": { availability: sleep, events: [], tasks: [] }
+   "06:00": { availability: sleep, events: [], tasks: [] }
+   "07:00": { availability: sleep, events: [], tasks: [] }
+   "08:00": { availability: available, events: [], tasks: [] }
+   "09:00": { availability: available, events: [], tasks: [] }
+   "10:00": { availability: available, events: [], tasks: [] }
+   "11:00": { availability: available, events: [], tasks: [] }
+   "12:00": { availability: available, events: [], tasks: [] }
+   "13:00": { availability: available, events: [], tasks: [] }
+   "14:00": { availability: available, events: [], tasks: [] }
+   "15:00": { availability: available, events: [], tasks: [] }
+   "16:00": { availability: available, events: [], tasks: [] }
+   "17:00": { availability: available, events: [], tasks: [] }
+   "18:00": { availability: available, events: [], tasks: [] }
+   "19:00": { availability: available, events: [], tasks: [] }
+   "20:00": { availability: available, events: [], tasks: [] }
+   "21:00": { availability: available, events: [], tasks: [] }
+   "22:00": { availability: sleep, events: [], tasks: [] }
+   "23:00": { availability: sleep, events: [], tasks: [] }
+
 
 Sunday:
-  "00:00": { availability: break, events: [], tasks: [] }
-  "01:00": { availability: break, events: [], tasks: [] }
-  "02:00": { availability: break, events: [], tasks: [] }
-  "03:00": { availability: break, events: [], tasks: [] }
-  "04:00": { availability: break, events: [], tasks: [] }
-  "05:00": { availability: break, events: [], tasks: [] }
-  "06:00": { availability: sleep, events: [], tasks: [] }
-  "07:00": { availability: sleep, events: [], tasks: [] }
-  "08:00": { availability: sleep, events: [], tasks: [] }
-  "09:00": { availability: available, events: [], tasks: [{title: "Morning routine"}] }
-  "10:00": { availability: available, events: [], tasks: [] }
-  "11:00": { availability: available, events: [{title: "Weekly planning"}], tasks: [{title: "Plan next week"}] }
-  "12:00": { availability: break, events: [{title: "Lunch", duration: 60}], tasks: [] }
-  "13:00": { availability: available, events: [], tasks: [] }
-  "14:00": { availability: available, events: [], tasks: [] }
-  "15:00": { availability: available, events: [], tasks: [] }
-  "16:00": { availability: available, events: [], tasks: [] }
-  "17:00": { availability: available, events: [], tasks: [] }
-  "18:00": { availability: available, events: [], tasks: [] }
-  "19:00": { availability: available, events: [{title: "Dinner/Prep"}], tasks: [] }
-  "20:00": { availability: available, events: [], tasks: [] }
-  "21:00": { availability: available, events: [], tasks: [] }
-  "22:00": { availability: break, events: [{title: "Wind down for week"}], tasks: [] }
-  "23:00": { availability: break, events: [], tasks: [] }
+   "00:00": { availability: sleep, events: [], tasks: [] }
+   "01:00": { availability: sleep, events: [], tasks: [] }
+   "02:00": { availability: sleep, events: [], tasks: [] }
+   "03:00": { availability: sleep, events: [], tasks: [] }
+   "04:00": { availability: sleep, events: [], tasks: [] }
+   "05:00": { availability: sleep, events: [], tasks: [] }
+   "06:00": { availability: sleep, events: [], tasks: [] }
+   "07:00": { availability: sleep, events: [], tasks: [] }
+   "08:00": { availability: available, events: [], tasks: [] }
+   "09:00": { availability: available, events: [], tasks: [] }
+   "10:00": { availability: available, events: [], tasks: [] }
+   "11:00": { availability: available, events: [], tasks: [] }
+   "12:00": { availability: available, events: [], tasks: [] }
+   "13:00": { availability: available, events: [], tasks: [] }
+   "14:00": { availability: available, events: [], tasks: [] }
+   "15:00": { availability: available, events: [], tasks: [] }
+   "16:00": { availability: available, events: [], tasks: [] }
+   "17:00": { availability: available, events: [], tasks: [] }
+   "18:00": { availability: available, events: [], tasks: [] }
+   "19:00": { availability: available, events: [], tasks: [] }
+   "20:00": { availability: available, events: [], tasks: [] }
+   "21:00": { availability: available, events: [], tasks: [] }
+   "22:00": { availability: sleep, events: [], tasks: [] }
+   "23:00": { availability: sleep, events: [], tasks: [] }

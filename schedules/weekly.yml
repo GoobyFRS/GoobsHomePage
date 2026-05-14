@@ -1,53 +1,52 @@
 week_overview:
   Monday:
     focus_hours: "9-11 AM, 1-4 PM"
-    key_tasks:
-      - "Deep work block (2 hours)"
-      - "Meetings/collaboration"
-    notes: "Start of week planning"
+    schedule_item:
+      - "Item 1"
+      - "Item 2"
+    notes: "Daily Note Here"
 
   Tuesday:
     focus_hours: "9-11 AM, 1-4 PM"
-    key_tasks:
-      - "Deep work block (2 hours)"
-      - "Mid-week check-in"
-    notes: "Momentum phase"
+    schedule_item:
+      - "Item 1"
+      - "Item 2"
+    notes: "Daily Note Here"
 
   Wednesday:
     focus_hours: "9-11 AM, 1-4 PM"
-    key_tasks:
-      - "Deep work block (2 hours)"
-      - "Adjust priorities"
-    notes: "Mid-week assessment"
+    schedule_item:
+      - "Item 1"
+      - "Item 2"
+    notes: "Daily Note Here"
 
   Thursday:
     focus_hours: "9-11 AM, 1-4 PM"
-    key_tasks:
-      - "Deep work block (2 hours)"
-      - "Wrap up initiatives"
-    notes: "Push towards completion"
+    schedule_item:
+      - "Item 1"
+      - "Item 2"
+    notes: "Daily Note Here"
 
   Friday:
     focus_hours: "9-11 AM"
-    key_tasks:
-      - "Morning focus session"
-      - "Week review"
-      - "Next week prep"
-    notes: "Wind down, prepare for weekend"
+    schedule_item:
+      - "Item 1"
+      - "Item 2"
+    notes: "Daily Note Here"
 
   Saturday:
     focus_hours: "None planned"
-    key_tasks:
-      - "Personal projects/hobbies"
-      - "Errands/household"
-    notes: "Flexible, self-directed"
+    schedule_item:
+      - "Item 1"
+      - "Item 2"
+    notes: "Daily Note Here"
 
   Sunday:
     focus_hours: "11 AM - 12 PM"
-    key_tasks:
-      - "Weekly planning session"
-      - "Meal prep"
-    notes: "Preparation for upcoming week"
+    schedule_item:
+      - "Item 1"
+      - "Item 2"
+    notes: "Daily Note Here"
 
 recurring_meetings:
   - title: "Team Standup"

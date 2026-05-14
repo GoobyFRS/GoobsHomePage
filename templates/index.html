@@ -146,11 +146,11 @@
                 <p>{{ details.focus_hours }}</p>
             </div>
 
-            {% if details.key_tasks %}
+            {% if details.schedule_item %}
             <div class="day-tasks">
-                <strong>Key Tasks:</strong>
+                <strong>Daily Items:</strong>
                 <ul>
-                    {% for task in details.key_tasks %}
+                    {% for task in details.schedule_item %}
                     <li>{{ task }}</li>
                     {% endfor %}
                 </ul>
@@ -177,11 +177,11 @@
 <!-- ===================================================== -->
 
 <section
-    id="homemc-status"
-    aria-labelledby="homemc-status-heading"
+    id="uptime_kuma-status"
+    aria-labelledby="uptime_kuma-status-heading"
 >
-    <h2 id="homemc-status-heading">
-        HomeMC Status
+    <h2 id="uptime_kuma-status-heading">
+        Uptime Dawg Status
     </h2>
 
     <div class="panel-card">

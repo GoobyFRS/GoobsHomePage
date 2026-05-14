@@ -27,7 +27,7 @@ def fetch_uptime_status(config):
     uptime_kuma:
       enabled: true
       api_url: "http://192.168.1.100:3001"
-      status_page_slug: "homemc"
+      status_page_slug: "uptime_kuma"
     """
 
     if not config.get("enabled", False):
