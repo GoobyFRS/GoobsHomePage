@@ -1,20 +1,28 @@
 site:
-  title: "Household Dashboard"
-  subtitle: "HomeMC Network"
+  title: "Gooby House"
+  subtitle: "Goob n Roobies Homepage"
 
 appearance:
   default_theme: "dark"
 
 weather:
+  refresh_minutes: 60
+
   locations:
     - label: "Issaquah, WA"
       zip: "98029"
+      latitude: 47.5301
+      longitude: -122.0326
+
     - label: "New Salem, ND"
       zip: "58563"
+      latitude: 46.8458
+      longitude: -101.4112
+
     - label: "Aurora, CO"
       zip: "80247"
-    - label: "Quincy, IL"
-      zip: "62301"
+      latitude: 39.6999
+      longitude: -104.8764
 
 clocks:
   - label: "Pacific"
@@ -22,14 +30,14 @@ clocks:
   - label: "Mountain"
     timezone: "America/Denver"
   - label: "Central"
-    timezone: "America/Chicago"
+    timezone: "America/North_Dakota/New_Salem"
   - label: "Eastern"
     timezone: "America/New_York"
 
 uptime_kuma:
   enabled: false
-  api_url: "http://localhost:3001"
-  status_page_slug: "homemc"
+  api_url: "http://100.71.31.43:3001"
+  status_page_slug: "default"
 
 schedule:
   daily_enabled: true

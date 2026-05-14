@@ -3,17 +3,17 @@ const themeToggle = document.getElementById("theme-toggle");
 function loadTheme() {
     const savedTheme = localStorage.getItem("theme");
 
-    if (savedTheme === "light") {
-        document.body.classList.add("light-mode");
+    if (savedTheme === "minecraft-light") {
+        document.body.classList.add("minecraft-light-mode");
     }
 }
 
 function toggleTheme() {
-    document.body.classList.toggle("light-mode");
+    document.body.classList.toggle("minecraft-light-mode");
 
-    const isLight = document.body.classList.contains("light-mode");
+    const isMinecraftLight = document.body.classList.contains("minecraft-light-mode");
 
-    localStorage.setItem("theme", isLight ? "light" : "dark");
+    localStorage.setItem("theme", isMinecraftLight ? "minecraft-light" : "win98-dark");
 }
 
 if (themeToggle) {

@@ -1,4 +1,24 @@
 :root {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --surface-color: #0a0a0a;
+    --border-color: #666666;
+    --shadow-light: #ffffff;
+    --shadow-dark: #000000;
+    --accent-color: #00bfff;
+    --minecraft-green: #228b22;
+}
+
+body.minecraft-light-mode {
+    --bg-color: #c0b000;
+    --text-color: #1a1a1a;
+    --surface-color: #8b6914;
+    --border-color: #556b2f;
+    --shadow-light: #ffffff;
+    --shadow-dark: #2d2d2d;
+    --accent-color: #228b22;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -78,3 +98,73 @@ button:focus {
 
 section {
     margin-bottom: 2rem;
+}
+
+.win98-navbar {
+    background: var(--surface-color);
+
+    padding: 0.5rem;
+
+    margin-bottom: 1rem;
+
+    border-top: 2px solid var(--shadow-light);
+    border-left: 2px solid var(--shadow-light);
+
+    border-right: 2px solid var(--shadow-dark);
+    border-bottom: 2px solid var(--shadow-dark);
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    gap: 0.5rem;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    display: flex;
+}
+
+.nav-list a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 32px;
+
+    padding: 0.4rem 0.85rem;
+
+    text-decoration: none;
+
+    color: var(--text-color);
+
+    background: var(--surface-color);
+
+    font-weight: bold;
+
+    border-top: 2px solid var(--shadow-light);
+    border-left: 2px solid var(--shadow-light);
+
+    border-right: 2px solid var(--shadow-dark);
+    border-bottom: 2px solid var(--shadow-dark);
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+    background: var(--minecraft-green);
+    color: white;
+}
+
+.nav-list a:active {
+    border-top: 2px solid var(--shadow-dark);
+    border-left: 2px solid var(--shadow-dark);
+
+    border-right: 2px solid var(--shadow-light);
+    border-bottom: 2px solid var(--shadow-light);
+}

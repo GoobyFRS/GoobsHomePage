@@ -1,0 +1,9 @@
+items:
+  - label: "Dashboard"
+    href: "/"
+
+  - label: "Submit a Ticket"
+    href: "https://support.mattfaulkner.net"
+
+  - label: "UptimeDawg"
+    href: "https://uptime.mattfaulkner.net"

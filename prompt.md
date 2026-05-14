@@ -17,6 +17,6 @@ Landing Page for my household. To be hosted on a Raspberry Pi and accessed via I
 
 **Display a Weekly Schedule** (Placeholder navigation. Need to determine what this looks like.)
 
-**Display HomeMC Status** - Pulled from Uptime-Kuma
+**Display uptime_kuma Status** - Pulled from Uptime-Kuma
 
 Design should be like Minecraft or old Windows 98.

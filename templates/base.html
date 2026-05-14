@@ -8,7 +8,7 @@
 
     <meta
         name="description"
-        content="Household landing page dashboard"
+        content="Home Landing Page"
     >
 
     <link
@@ -36,22 +36,27 @@
         </button>
     </header>
 
-    <nav aria-label="Primary navigation">
-        <ul class="nav-list">
-            <li><a href="#clocks">Clocks</a></li>
-            <li><a href="#weather">Weather</a></li>
-            <li><a href="#daily-schedule">Daily Schedule</a></li>
-            <li><a href="#weekly-schedule">Weekly Schedule</a></li>
-            <li><a href="#homemc-status">HomeMC Status</a></li>
-        </ul>
-    </nav>
+    <nav
+    class="win98-navbar"
+    aria-label="Primary navigation"
+>
+    <ul class="nav-list">
+        {% for item in nav_menu %}
+        <li>
+            <a href="{{ item.href }}">
+                {{ item.label }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
 
     <main id="main-content">
         {% block content %}{% endblock %}
     </main>
 
     <footer>
-        <p>Household Dashboard</p>
+        <p>Faulkner Hosted with Love</p>
     </footer>
 
     <script src="{{ url_for('static', filename='app.js') }}"></script>

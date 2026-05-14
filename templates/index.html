@@ -24,6 +24,7 @@
             <h3>{{ item.label }}</h3>
             <p>{{ item.temperature }}</p>
             <p>{{ item.condition }}</p>
+            <p>Wind: {{ item.wind }}</p>
         </article>
         {% endfor %}
     </div>
@@ -52,10 +53,10 @@
 </section>
 
 <section
-    id="homemc-status"
-    aria-labelledby="homemc-status-heading"
+    id="uptime_kuma-status"
+    aria-labelledby="uptime_kuma-status-heading"
 >
-    <h2 id="homemc-status-heading">HomeMC Status</h2>
+    <h2 id="uptime_kuma-status-heading">Uptime-Kuma Status</h2>
 
     <div class="panel-card">
         <p>Status: {{ uptime_status.message }}</p>
