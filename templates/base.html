@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ site.title }}</title>
+
+    <meta
+        name="description"
+        content="Household landing page dashboard"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+<body>
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <header class="site-header">
+        <div>
+            <h1>{{ site.title }}</h1>
+            <p>{{ site.subtitle }}</p>
+        </div>
+
+        <button
+            id="theme-toggle"
+            type="button"
+            aria-label="Toggle light and dark mode"
+        >
+            Toggle Theme
+        </button>
+    </header>
+
+    <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+            <li><a href="#clocks">Clocks</a></li>
+            <li><a href="#weather">Weather</a></li>
+            <li><a href="#daily-schedule">Daily Schedule</a></li>
+            <li><a href="#weekly-schedule">Weekly Schedule</a></li>
+            <li><a href="#homemc-status">HomeMC Status</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>Household Dashboard</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

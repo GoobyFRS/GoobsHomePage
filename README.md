@@ -1,20 +1,23 @@
 # GoobsHomePage
 
-Landing Page for my household. To be hosted on a Raspberry Pi and accessed via IP address.
+Home Dashboard based on Python3 Flask.
 
-- Python3 Flask
-- Jinja HTML templates
-- Prefer to store and reference data in YAML or JSON files.
-- Follow W3 HTML5 best practices for accessibility.
-- Single Javascript file.
-- Single CSS file.
+## Quick Setup
 
-**Time Clocks:** Pacific, Mountain, Central, Eastern
+```txt
+python3 -m venv venv
+source venv/bin/activate
+#venv\Scripts\activate
+pip install -r requirements.txt
+python3 app.py
+```
 
-**Weather** Issaquah WA 98029, New Salem ND 58563, Aurora CO 80247, Quincy IL
+http://RASPBERRY_PI_IP:5000
 
-**Display a Daily Schedule** 
+See outdated packages
 
-**Display a Weekly Schedule**
-
-**Display HomeMC Status** - Pulled from Uptime-Kuma
+```shell
+pip list --outdated
+pip install --upgrade flask requests pyyaml tzdata
+pip freeze > requirements.txt
+```

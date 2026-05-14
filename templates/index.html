@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="clocks" aria-labelledby="clocks-heading">
+    <h2 id="clocks-heading">Time Clocks</h2>
+
+    <div class="card-grid">
+        {% for clock in clocks %}
+        <article class="panel-card">
+            <h3>{{ clock.label }}</h3>
+            <p class="clock-time">{{ clock.time }}</p>
+            <p>{{ clock.date }}</p>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+<section id="weather" aria-labelledby="weather-heading">
+    <h2 id="weather-heading">Weather</h2>
+
+    <div class="card-grid">
+        {% for item in weather_data %}
+        <article class="panel-card">
+            <h3>{{ item.label }}</h3>
+            <p>{{ item.temperature }}</p>
+            <p>{{ item.condition }}</p>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+<section
+    id="daily-schedule"
+    aria-labelledby="daily-schedule-heading"
+>
+    <h2 id="daily-schedule-heading">Daily Schedule</h2>
+
+    <div class="panel-card">
+        <p>Placeholder for daily schedule.</p>
+    </div>
+</section>
+
+<section
+    id="weekly-schedule"
+    aria-labelledby="weekly-schedule-heading"
+>
+    <h2 id="weekly-schedule-heading">Weekly Schedule</h2>
+
+    <div class="panel-card">
+        <p>Placeholder for weekly schedule.</p>
+    </div>
+</section>
+
+<section
+    id="homemc-status"
+    aria-labelledby="homemc-status-heading"
+>
+    <h2 id="homemc-status-heading">HomeMC Status</h2>
+
+    <div class="panel-card">
+        <p>Status: {{ uptime_status.message }}</p>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,36 @@
+site:
+  title: "Household Dashboard"
+  subtitle: "HomeMC Network"
+
+appearance:
+  default_theme: "dark"
+
+weather:
+  locations:
+    - label: "Issaquah, WA"
+      zip: "98029"
+    - label: "New Salem, ND"
+      zip: "58563"
+    - label: "Aurora, CO"
+      zip: "80247"
+    - label: "Quincy, IL"
+      zip: "62301"
+
+clocks:
+  - label: "Pacific"
+    timezone: "America/Los_Angeles"
+  - label: "Mountain"
+    timezone: "America/Denver"
+  - label: "Central"
+    timezone: "America/Chicago"
+  - label: "Eastern"
+    timezone: "America/New_York"
+
+uptime_kuma:
+  enabled: false
+  api_url: "http://localhost:3001"
+  status_page_slug: "homemc"
+
+schedule:
+  daily_enabled: true
+  weekly_enabled: true

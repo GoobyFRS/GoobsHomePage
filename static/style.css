@@ -1,0 +1,80 @@
+:root {
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 1rem;
+    font-family: Verdana, Arial, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: black;
+    color: white;
+    padding: 0.5rem;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list a {
+    color: var(--accent-color);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.panel-card {
+    background: var(--surface-color);
+    border: 3px solid var(--border-color);
+    padding: 1rem;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+.clock-time {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+button {
+    border: 2px solid var(--border-color);
+    background: var(--surface-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    outline: 3px solid var(--accent-color);
+}
+
+section {
+    margin-bottom: 2rem;
