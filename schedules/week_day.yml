@@ -1,0 +1,129 @@
+Monday:
+  "00:00": { availability: sleep, events: [], tasks: [] }
+  "01:00": { availability: sleep, events: [], tasks: [] }
+  "02:00": { availability: sleep, events: [], tasks: [] }
+  "03:00": { availability: sleep, events: [], tasks: [] }
+  "04:00": { availability: sleep, events: [], tasks: [] }
+  "05:00": { availability: sleep, events: [], tasks: [] }
+  "06:00": { availability: sleep, events: [], tasks: [] }
+  "07:00": { availability: sleep, events: [], tasks: [] }
+  "08:00": { availability: available, events: [], tasks: [{title: "Morning routine"}] }
+  "09:00": { availability: focus, events: [{title: "Deep work block", duration: 120}], tasks: [] }
+  "10:00": { availability: focus, events: [], tasks: [] }
+  "11:00": { availability: available, events: [], tasks: [] }
+  "12:00": { availability: break, events: [{title: "Lunch", duration: 60}], tasks: [] }
+  "13:00": { availability: available, events: [], tasks: [] }
+  "14:00": { availability: available, events: [], tasks: [] }
+  "15:00": { availability: available, events: [], tasks: [] }
+  "16:00": { availability: available, events: [], tasks: [] }
+  "17:00": { availability: commute, events: [{title: "Commute home", duration: 30}], tasks: [] }
+  "18:00": { availability: available, events: [], tasks: [] }
+  "19:00": { availability: available, events: [], tasks: [] }
+  "20:00": { availability: available, events: [], tasks: [] }
+  "21:00": { availability: break, events: [{title: "Evening wind down"}], tasks: [] }
+  "22:00": { availability: sleep, events: [], tasks: [] }
+  "23:00": { availability: sleep, events: [], tasks: [] }
+
+Tuesday:
+  "00:00": { availability: sleep, events: [], tasks: [] }
+  "01:00": { availability: sleep, events: [], tasks: [] }
+  "02:00": { availability: sleep, events: [], tasks: [] }
+  "03:00": { availability: sleep, events: [], tasks: [] }
+  "04:00": { availability: sleep, events: [], tasks: [] }
+  "05:00": { availability: sleep, events: [], tasks: [] }
+  "06:00": { availability: sleep, events: [], tasks: [] }
+  "07:00": { availability: sleep, events: [], tasks: [] }
+  "08:00": { availability: available, events: [], tasks: [{title: "Morning routine"}] }
+  "09:00": { availability: focus, events: [{title: "Deep work block", duration: 120}], tasks: [] }
+  "10:00": { availability: focus, events: [], tasks: [] }
+  "11:00": { availability: available, events: [], tasks: [] }
+  "12:00": { availability: break, events: [{title: "Lunch", duration: 60}], tasks: [] }
+  "13:00": { availability: available, events: [], tasks: [] }
+  "14:00": { availability: available, events: [], tasks: [] }
+  "15:00": { availability: available, events: [], tasks: [] }
+  "16:00": { availability: available, events: [], tasks: [] }
+  "17:00": { availability: commute, events: [{title: "Commute home", duration: 30}], tasks: [] }
+  "18:00": { availability: available, events: [], tasks: [] }
+  "19:00": { availability: available, events: [], tasks: [] }
+  "20:00": { availability: available, events: [], tasks: [] }
+  "21:00": { availability: break, events: [{title: "Evening wind down"}], tasks: [] }
+  "22:00": { availability: sleep, events: [], tasks: [] }
+  "23:00": { availability: sleep, events: [], tasks: [] }
+
+Wednesday:
+  "00:00": { availability: sleep, events: [], tasks: [] }
+  "01:00": { availability: sleep, events: [], tasks: [] }
+  "02:00": { availability: sleep, events: [], tasks: [] }
+  "03:00": { availability: sleep, events: [], tasks: [] }
+  "04:00": { availability: sleep, events: [], tasks: [] }
+  "05:00": { availability: sleep, events: [], tasks: [] }
+  "06:00": { availability: sleep, events: [], tasks: [] }
+  "07:00": { availability: sleep, events: [], tasks: [] }
+  "08:00": { availability: available, events: [], tasks: [{title: "Morning routine"}] }
+  "09:00": { availability: focus, events: [{title: "Deep work block", duration: 120}], tasks: [] }
+  "10:00": { availability: focus, events: [], tasks: [] }
+  "11:00": { availability: available, events: [], tasks: [] }
+  "12:00": { availability: break, events: [{title: "Lunch", duration: 60}], tasks: [] }
+  "13:00": { availability: available, events: [], tasks: [] }
+  "14:00": { availability: available, events: [], tasks: [] }
+  "15:00": { availability: available, events: [], tasks: [] }
+  "16:00": { availability: available, events: [], tasks: [] }
+  "17:00": { availability: commute, events: [{title: "Commute home", duration: 30}], tasks: [] }
+  "18:00": { availability: available, events: [], tasks: [] }
+  "19:00": { availability: available, events: [], tasks: [] }
+  "20:00": { availability: available, events: [], tasks: [] }
+  "21:00": { availability: break, events: [{title: "Evening wind down"}], tasks: [] }
+  "22:00": { availability: sleep, events: [], tasks: [] }
+  "23:00": { availability: sleep, events: [], tasks: [] }
+
+Thursday:
+  "00:00": { availability: sleep, events: [], tasks: [] }
+  "01:00": { availability: sleep, events: [], tasks: [] }
+  "02:00": { availability: sleep, events: [], tasks: [] }
+  "03:00": { availability: sleep, events: [], tasks: [] }
+  "04:00": { availability: sleep, events: [], tasks: [] }
+  "05:00": { availability: sleep, events: [], tasks: [] }
+  "06:00": { availability: sleep, events: [], tasks: [] }
+  "07:00": { availability: sleep, events: [], tasks: [] }
+  "08:00": { availability: available, events: [], tasks: [{title: "Morning routine"}] }
+  "09:00": { availability: focus, events: [{title: "Deep work block", duration: 120}], tasks: [] }
+  "10:00": { availability: focus, events: [], tasks: [] }
+  "11:00": { availability: available, events: [], tasks: [] }
+  "12:00": { availability: break, events: [{title: "Lunch", duration: 60}], tasks: [] }
+  "13:00": { availability: available, events: [], tasks: [] }
+  "14:00": { availability: available, events: [], tasks: [] }
+  "15:00": { availability: available, events: [], tasks: [] }
+  "16:00": { availability: available, events: [], tasks: [] }
+  "17:00": { availability: commute, events: [{title: "Commute home", duration: 30}], tasks: [] }
+  "18:00": { availability: available, events: [], tasks: [] }
+  "19:00": { availability: available, events: [], tasks: [] }
+  "20:00": { availability: available, events: [], tasks: [] }
+  "21:00": { availability: break, events: [{title: "Evening wind down"}], tasks: [] }
+  "22:00": { availability: sleep, events: [], tasks: [] }
+  "23:00": { availability: sleep, events: [], tasks: [] }
+
+Friday:
+  "00:00": { availability: sleep, events: [], tasks: [] }
+  "01:00": { availability: sleep, events: [], tasks: [] }
+  "02:00": { availability: sleep, events: [], tasks: [] }
+  "03:00": { availability: sleep, events: [], tasks: [] }
+  "04:00": { availability: sleep, events: [], tasks: [] }
+  "05:00": { availability: sleep, events: [], tasks: [] }
+  "06:00": { availability: sleep, events: [], tasks: [] }
+  "07:00": { availability: sleep, events: [], tasks: [] }
+  "08:00": { availability: available, events: [], tasks: [{title: "Morning routine"}] }
+  "09:00": { availability: focus, events: [{title: "Deep work block", duration: 120}], tasks: [] }
+  "10:00": { availability: focus, events: [], tasks: [] }
+  "11:00": { availability: available, events: [], tasks: [] }
+  "12:00": { availability: break, events: [{title: "Lunch", duration: 60}], tasks: [] }
+  "13:00": { availability: available, events: [], tasks: [] }
+  "14:00": { availability: available, events: [], tasks: [] }
+  "15:00": { availability: available, events: [], tasks: [] }
+  "16:00": { availability: available, events: [], tasks: [] }
+  "17:00": { availability: commute, events: [{title: "Commute home", duration: 30}], tasks: [] }
+  "18:00": { availability: available, events: [], tasks: [] }
+  "19:00": { availability: available, events: [{title: "Friday evening"}], tasks: [] }
+  "20:00": { availability: available, events: [], tasks: [] }
+  "21:00": { availability: available, events: [], tasks: [] }
+  "22:00": { availability: break, events: [], tasks: [] }
+  "23:00": { availability: break, events: [], tasks: [] }

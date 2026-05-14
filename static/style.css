@@ -1,22 +1,22 @@
 :root {
-    --bg-color: #1a1a1a;
-    --text-color: #e0e0e0;
-    --surface-color: #0a0a0a;
-    --border-color: #666666;
-    --shadow-light: #ffffff;
-    --shadow-dark: #000000;
-    --accent-color: #00bfff;
-    --minecraft-green: #228b22;
+    --bg-color: #0a1f3d;
+    --text-color: #ecf0f1;
+    --surface-color: #1a3a5a;
+    --border-color: #0078d4;
+    --shadow-light: #4da6ff;
+    --shadow-dark: #001a4d;
+    --accent-color: #0078d4;
+    --minecraft-green: #48b518;
 }
 
 body.minecraft-light-mode {
-    --bg-color: #c0b000;
+    --bg-color: #87ceeb;
     --text-color: #1a1a1a;
-    --surface-color: #8b6914;
-    --border-color: #556b2f;
+    --surface-color: #deb887;
+    --border-color: #6d4c41;
     --shadow-light: #ffffff;
-    --shadow-dark: #2d2d2d;
-    --accent-color: #228b22;
+    --shadow-dark: #3e2723;
+    --accent-color: #48b518;
 }
 
 * {
@@ -167,4 +167,141 @@ section {
 
     border-right: 2px solid var(--shadow-light);
     border-bottom: 2px solid var(--shadow-light);
+}
+
+/* ===================================================== */
+/* SCHEDULE STYLES */
+/* ===================================================== */
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.schedule-hour {
+    background: var(--surface-color);
+    border: 2px solid var(--border-color);
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.hour-time {
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.hour-availability {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.hour-availability.sleep {
+    background: #2d3748;
+    color: #a0aec0;
+}
+
+.hour-availability.available {
+    background: var(--minecraft-green);
+    color: white;
+}
+
+.hour-availability.focus {
+    background: #4299e1;
+    color: white;
+}
+
+.hour-availability.break {
+    background: #ed8936;
+    color: white;
+}
+
+.hour-availability.busy {
+    background: #f56565;
+    color: white;
+}
+
+.hour-availability.commute {
+    background: #9f7aea;
+    color: white;
+}
+
+.hour-events,
+.hour-tasks {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.event-badge,
+.task-badge {
+    display: inline-block;
+    background: var(--border-color);
+    color: var(--text-color);
+    padding: 0.2rem 0.4rem;
+    border-radius: 2px;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.task-badge {
+    background: var(--minecraft-green);
+}
+
+.weekly-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.week-day-card {
+    min-height: 200px;
+}
+
+.week-day-card h3 {
+    margin-top: 0;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.day-focus {
+    margin: 0.75rem 0;
+}
+
+.day-focus p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+.day-tasks {
+    margin: 0.75rem 0;
+}
+
+.day-tasks ul {
+    margin: 0.25rem 0;
+    padding-left: 1.25rem;
+    font-size: 0.9rem;
+}
+
+.day-tasks li {
+    margin: 0.2rem 0;
+}
+
+.day-notes {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--accent-color);
 }

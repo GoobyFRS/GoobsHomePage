@@ -29,6 +29,29 @@ def load_nav_menu():
         return yaml.safe_load(file)
 
 
+def load_schedules():
+    schedules = {}
+    try:
+        with open("schedules/week_day.yml", "r", encoding="utf-8") as file:
+            schedules["week_day"] = yaml.safe_load(file)
+    except FileNotFoundError:
+        schedules["week_day"] = {}
+
+    try:
+        with open("schedules/week_end.yml", "r", encoding="utf-8") as file:
+            schedules["week_end"] = yaml.safe_load(file)
+    except FileNotFoundError:
+        schedules["week_end"] = {}
+
+    try:
+        with open("schedules/weekly.yml", "r", encoding="utf-8") as file:
+            schedules["weekly"] = yaml.safe_load(file)
+    except FileNotFoundError:
+        schedules["weekly"] = {}
+
+    return schedules
+
+
 # =========================================================
 # UPTIME-KUMA STATUS
 # =========================================================
@@ -97,6 +120,11 @@ def index():
 
     nav_menu = load_nav_menu()
 
+    schedules = load_schedules()
+
+    # Get today's day of week
+    today = datetime.now().strftime("%A")
+
     # =====================================================
     # CLOCKS
     # =====================================================
@@ -159,6 +187,8 @@ def index():
         weather_data=weather_data,
         uptime_status=uptime_status,
         schedule=data["schedule"],
+        schedules=schedules,
+        today=today,
         nav_menu=nav_menu["items"]
     )
 

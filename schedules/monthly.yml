@@ -1,0 +1,45 @@
+month_template:
+  overview: "Monthly planning and tracking template"
+
+  weeks:
+    week_1:
+      focus: "Planning & Setup"
+      goals:
+        - "Review previous month goals"
+        - "Set new month objectives"
+        - "Plan major initiatives"
+      focus_areas: []
+
+    week_2:
+      focus: "Execution & Momentum"
+      goals:
+        - "Execute on planned initiatives"
+        - "Build momentum on projects"
+        - "Mid-month check-in"
+      focus_areas: []
+
+    week_3:
+      focus: "Progress & Adjustment"
+      goals:
+        - "Assess progress to date"
+        - "Adjust course if needed"
+        - "Address blockers"
+      focus_areas: []
+
+    week_4:
+      focus: "Wrap-up & Planning"
+      goals:
+        - "Complete end-of-month tasks"
+        - "Document learnings"
+        - "Prepare for next month"
+      focus_areas: []
+
+  key_dates: []
+
+  monthly_review:
+    what_went_well: []
+    what_could_improve: []
+    metrics_tracked: []
+    next_month_priorities: []
+
+  notes: "Add specific goals, deadlines, and focus areas for the month"

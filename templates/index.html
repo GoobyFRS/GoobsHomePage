@@ -1,4 +1,3 @@
-```html
 {% extends "base.html" %}
 
 {% block content %}
@@ -82,34 +81,46 @@
     aria-labelledby="daily-schedule-heading"
 >
     <h2 id="daily-schedule-heading">
-        Daily Schedule
+        Today's Schedule ({{ today }})
     </h2>
 
-    <div class="panel-card">
+    {% set current_schedule = schedules.week_day.get(today) if today in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"] else schedules.week_end.get(today) %}
 
-        <p>
-            Daily schedule system not yet configured.
-        </p>
+    {% if current_schedule %}
+    <div class="schedule-grid">
+        {% for hour, slot in current_schedule.items() %}
+        <div class="schedule-hour">
+            <div class="hour-time">
+                {{ hour }}
+            </div>
 
-        <nav
-            aria-label="Daily schedule navigation"
-        >
-            <ul>
-                <li>
-                    Placeholder menu item
-                </li>
+            <div class="hour-availability {{ slot.availability }}">
+                {{ slot.availability }}
+            </div>
 
-                <li>
-                    Future YAML-driven navigation
-                </li>
+            {% if slot.events %}
+            <div class="hour-events">
+                {% for event in slot.events %}
+                <span class="event-badge">{{ event.title }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
 
-                <li>
-                    Future calendar integration
-                </li>
-            </ul>
-        </nav>
-
+            {% if slot.tasks %}
+            <div class="hour-tasks">
+                {% for task in slot.tasks %}
+                <span class="task-badge">✓ {{ task.title }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
     </div>
+    {% else %}
+    <div class="panel-card">
+        <p>No schedule found for today.</p>
+    </div>
+    {% endif %}
 </section>
 
 <!-- ===================================================== -->
@@ -121,34 +132,44 @@
     aria-labelledby="weekly-schedule-heading"
 >
     <h2 id="weekly-schedule-heading">
-        Weekly Schedule
+        Weekly Overview
     </h2>
 
-    <div class="panel-card">
+    {% if schedules.weekly.week_overview %}
+    <div class="weekly-grid">
+        {% for day, details in schedules.weekly.week_overview.items() %}
+        <article class="week-day-card panel-card">
+            <h3>{{ day }}</h3>
 
-        <p>
-            Weekly schedule system not yet configured.
-        </p>
+            <div class="day-focus">
+                <strong>Focus Hours:</strong>
+                <p>{{ details.focus_hours }}</p>
+            </div>
 
-        <nav
-            aria-label="Weekly schedule navigation"
-        >
-            <ul>
-                <li>
-                    Placeholder menu item
-                </li>
+            {% if details.key_tasks %}
+            <div class="day-tasks">
+                <strong>Key Tasks:</strong>
+                <ul>
+                    {% for task in details.key_tasks %}
+                    <li>{{ task }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
 
-                <li>
-                    Future YAML-driven navigation
-                </li>
-
-                <li>
-                    Future recurring task system
-                </li>
-            </ul>
-        </nav>
-
+            {% if details.notes %}
+            <div class="day-notes">
+                <em>{{ details.notes }}</em>
+            </div>
+            {% endif %}
+        </article>
+        {% endfor %}
     </div>
+    {% else %}
+    <div class="panel-card">
+        <p>No weekly schedule found.</p>
+    </div>
+    {% endif %}
 </section>
 
 <!-- ===================================================== -->
@@ -221,4 +242,3 @@
 </section>
 
 {% endblock %}
-```

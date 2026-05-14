@@ -1,0 +1,67 @@
+week_overview:
+  Monday:
+    focus_hours: "9-11 AM, 1-4 PM"
+    key_tasks:
+      - "Deep work block (2 hours)"
+      - "Meetings/collaboration"
+    notes: "Start of week planning"
+
+  Tuesday:
+    focus_hours: "9-11 AM, 1-4 PM"
+    key_tasks:
+      - "Deep work block (2 hours)"
+      - "Mid-week check-in"
+    notes: "Momentum phase"
+
+  Wednesday:
+    focus_hours: "9-11 AM, 1-4 PM"
+    key_tasks:
+      - "Deep work block (2 hours)"
+      - "Adjust priorities"
+    notes: "Mid-week assessment"
+
+  Thursday:
+    focus_hours: "9-11 AM, 1-4 PM"
+    key_tasks:
+      - "Deep work block (2 hours)"
+      - "Wrap up initiatives"
+    notes: "Push towards completion"
+
+  Friday:
+    focus_hours: "9-11 AM"
+    key_tasks:
+      - "Morning focus session"
+      - "Week review"
+      - "Next week prep"
+    notes: "Wind down, prepare for weekend"
+
+  Saturday:
+    focus_hours: "None planned"
+    key_tasks:
+      - "Personal projects/hobbies"
+      - "Errands/household"
+    notes: "Flexible, self-directed"
+
+  Sunday:
+    focus_hours: "11 AM - 12 PM"
+    key_tasks:
+      - "Weekly planning session"
+      - "Meal prep"
+    notes: "Preparation for upcoming week"
+
+recurring_meetings:
+  - title: "Team Standup"
+    days: [Monday, Tuesday, Wednesday, Thursday, Friday]
+    time: "9:00 AM"
+    duration: 30
+
+  - title: "Weekly Sync"
+    days: [Friday]
+    time: "2:00 PM"
+    duration: 60
+
+focus_time_blocks:
+  - title: "Deep Work"
+    days: [Monday, Tuesday, Wednesday, Thursday, Friday]
+    time: "9:00 AM - 11:00 AM"
+    duration: 120
