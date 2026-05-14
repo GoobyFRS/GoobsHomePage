@@ -1,32 +1,19 @@
-from datetime import datetime
-from zoneinfo import ZoneInfo
-
-import os
-
 import requests
 import yaml
 
-from dotenv import load_dotenv
+from datetime import datetime
+from zoneinfo import ZoneInfo
+
 from flask import Flask, render_template
 
 from services.weather import fetch_weather
-
-
-# =========================================================
-# LOAD ENVIRONMENT VARIABLES
-# =========================================================
-
-load_dotenv()
-
-UPTIME_KEY = os.getenv("UPTIME_KEY")
-
+from services.uptime import fetch_uptime_status
 
 # =========================================================
 # FLASK APP
 # =========================================================
 
 app = Flask(__name__)
-
 
 # =========================================================
 # YAML LOADERS

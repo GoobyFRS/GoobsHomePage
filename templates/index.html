@@ -1,65 +1,224 @@
+```html
 {% extends "base.html" %}
 
 {% block content %}
-<section id="clocks" aria-labelledby="clocks-heading">
-    <h2 id="clocks-heading">Time Clocks</h2>
+
+<!-- ===================================================== -->
+<!-- CLOCKS -->
+<!-- ===================================================== -->
+
+<section
+    id="clocks"
+    aria-labelledby="clocks-heading"
+>
+    <h2 id="clocks-heading">
+        Time Clocks
+    </h2>
 
     <div class="card-grid">
         {% for clock in clocks %}
         <article class="panel-card">
-            <h3>{{ clock.label }}</h3>
-            <p class="clock-time">{{ clock.time }}</p>
-            <p>{{ clock.date }}</p>
+
+            <h3>
+                {{ clock.label }}
+            </h3>
+
+            <p class="clock-time">
+                {{ clock.time }}
+            </p>
+
+            <p>
+                {{ clock.date }}
+            </p>
+
         </article>
         {% endfor %}
     </div>
 </section>
 
-<section id="weather" aria-labelledby="weather-heading">
-    <h2 id="weather-heading">Weather</h2>
+<!-- ===================================================== -->
+<!-- WEATHER -->
+<!-- ===================================================== -->
+
+<section
+    id="weather"
+    aria-labelledby="weather-heading"
+>
+    <h2 id="weather-heading">
+        Weather
+    </h2>
 
     <div class="card-grid">
         {% for item in weather_data %}
         <article class="panel-card">
-            <h3>{{ item.label }}</h3>
-            <p>{{ item.temperature }}</p>
-            <p>{{ item.condition }}</p>
-            <p>Wind: {{ item.wind }}</p>
+
+            <h3>
+                {{ item.label }}
+            </h3>
+
+            <p class="weather-temp">
+                {{ item.temperature }}°F
+            </p>
+
+            <p>
+                {{ item.condition }}
+            </p>
+
+            <p>
+                Wind: {{ item.wind }}
+            </p>
+
         </article>
         {% endfor %}
     </div>
 </section>
+
+<!-- ===================================================== -->
+<!-- DAILY SCHEDULE -->
+<!-- ===================================================== -->
 
 <section
     id="daily-schedule"
     aria-labelledby="daily-schedule-heading"
 >
-    <h2 id="daily-schedule-heading">Daily Schedule</h2>
+    <h2 id="daily-schedule-heading">
+        Daily Schedule
+    </h2>
 
     <div class="panel-card">
-        <p>Placeholder for daily schedule.</p>
+
+        <p>
+            Daily schedule system not yet configured.
+        </p>
+
+        <nav
+            aria-label="Daily schedule navigation"
+        >
+            <ul>
+                <li>
+                    Placeholder menu item
+                </li>
+
+                <li>
+                    Future YAML-driven navigation
+                </li>
+
+                <li>
+                    Future calendar integration
+                </li>
+            </ul>
+        </nav>
+
     </div>
 </section>
+
+<!-- ===================================================== -->
+<!-- WEEKLY SCHEDULE -->
+<!-- ===================================================== -->
 
 <section
     id="weekly-schedule"
     aria-labelledby="weekly-schedule-heading"
 >
-    <h2 id="weekly-schedule-heading">Weekly Schedule</h2>
+    <h2 id="weekly-schedule-heading">
+        Weekly Schedule
+    </h2>
 
     <div class="panel-card">
-        <p>Placeholder for weekly schedule.</p>
+
+        <p>
+            Weekly schedule system not yet configured.
+        </p>
+
+        <nav
+            aria-label="Weekly schedule navigation"
+        >
+            <ul>
+                <li>
+                    Placeholder menu item
+                </li>
+
+                <li>
+                    Future YAML-driven navigation
+                </li>
+
+                <li>
+                    Future recurring task system
+                </li>
+            </ul>
+        </nav>
+
     </div>
 </section>
+
+<!-- ===================================================== -->
+<!-- UPTIME-KUMA -->
+<!-- ===================================================== -->
 
 <section
-    id="uptime_kuma-status"
-    aria-labelledby="uptime_kuma-status-heading"
+    id="homemc-status"
+    aria-labelledby="homemc-status-heading"
 >
-    <h2 id="uptime_kuma-status-heading">Uptime-Kuma Status</h2>
+    <h2 id="homemc-status-heading">
+        HomeMC Status
+    </h2>
 
     <div class="panel-card">
-        <p>Status: {{ uptime_status.message }}</p>
+
+        <p class="uptime-summary">
+            {{ uptime_status.message }}
+        </p>
+
+        {% if uptime_status.services %}
+
+        <div class="card-grid">
+
+            {% for service in uptime_status.services %}
+            <article class="service-card">
+
+                <h3>
+                    {{ service.name }}
+                </h3>
+
+                <p>
+                    Status:
+
+                    {% if service.online %}
+                        <span class="status-online">
+                            Online
+                        </span>
+                    {% else %}
+                        <span class="status-offline">
+                            Offline
+                        </span>
+                    {% endif %}
+                </p>
+
+                {% if service.ping %}
+                <p>
+                    Ping: {{ service.ping }} ms
+                </p>
+                {% endif %}
+
+                <p>
+                    Type: {{ service.type }}
+                </p>
+
+            </article>
+            {% endfor %}
+
+        </div>
+
+        {% else %}
+
+        <p>
+            No services available.
+        </p>
+
+        {% endif %}
+
     </div>
 </section>
+
 {% endblock %}
+```
